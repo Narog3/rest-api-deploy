@@ -1,0 +1,9 @@
+POST --> Crear un nuevo elemento/recurso en el servidor (/movies). No es idempotente* porque crear siempre un nuevo recurso.
+
+PUT --> Actualizar totalmente un elemento ya existente o crearlo si no existente (/movies/123-456-789). SI es idempotente
+
+PATCH --> Actualizar parcialmente un elemento/recurso (/movies/123-456-789). Normalmente SI lo podria ser, PERO depende.
+
+
+*idempotente = Propiedad de realizar una acción determianda varias veces y aún así conseguir siempre el mismo resultado que se obtendría
+al hacerlo una vez.
